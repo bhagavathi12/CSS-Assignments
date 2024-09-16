@@ -1,0 +1,24 @@
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    background-color: aquamarine;
+    padding: 50px;
+}
+#MDN{
+    color:red;
+    font-weight: bolder;
+}
+#Youtube{
+    color: orange;
+    font-style: italic;
+}
+#Geeks{
+    color: darkgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#MDN::before{
+    decor
+}

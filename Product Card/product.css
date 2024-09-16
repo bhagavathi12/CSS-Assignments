@@ -1,0 +1,30 @@
+/* descendant selector--the element that is nested inside the ancestor. */
+.product-card{
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 10%;
+}
+.product-card h3{
+    color: palevioletred;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style:italic;
+    font-weight: bolder;
+}
+.product-card p{
+    font-size: large;
+    font-style: oblique;
+}
+button[type="button"]{
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 20%;
+    padding: 20px;
+}
+
+button[type="button"]:hover{
+    background-color: greenyellow;
+}
+.product-features:hover{
+    background-color: rgb(243, 196, 78);
+}
