@@ -19,6 +19,16 @@ ul{
     color: darkgreen;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#MDN::before{
-    decor
+li::before{
+    content: " --";
+    color: blue;
+    margin-right: 8px;
 }
+/* Use the child combinator to style only the direct children of the main <ul> list. */
+.navbar > ul > li{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+

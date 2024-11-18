@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0f0f0f;
+    color:white
+}
+img,a{
+    cursor: pointer;
+}
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+nav{
+    padding: 10px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(124, 118, 118, 0.5);
+    position: sticky;
+    z-index: 10;
+    background-color: #0f0f0f;
+    top: 0;
+}
+.nav-left .youtube-logo{
+    cursor: pointer;
+    margin-left: 30px;
+}
+.nav-left .menu{
+    height: 40px;
+    width:40px;
+    position: relative;  
+    cursor: pointer; 
+}
+.nav-left .menu:hover{
+    background-color: #474646;
+    border-radius: 50%;
+}
+.nav-left .menu span{
+    height: 5px;
+    width: 70%;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.nav-left .menu span:nth-child(1){
+    top: 25%;
+}
+.nav-left .menu span:nth-child(3){
+    top: 75%;
+}
+.nav-right img{
+    width: 25px;
+    margin-right: 25px;
+}
+.nav-right .user-icon{
+    width:35px;
+    border-radius: 50%;
+    margin-right: 0;
+}
+.nav-middle .mic-icon{
+    width: 16px;
+}
+.nav-middle .search-box{
+    background-color: none;
+    border: 1px solid rgb(50, 50, 50);
+    width:500px;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 8px 12px;
+    margin-right: 20px;
+}
+.nav-middle .search-box input{
+    background-color: transparent;
+    color: white;
+    width: 400px;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+}
+/* sidebar */
+.sidebar{
+    background-color: rgb(14, 14, 14);
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    padding-left: 2%;
+    padding-top: 80px;
+}
+.small-sidebar{
+    width:5%;
+}
+.small-sidebar p,h3{
+    display: none;
+}
+.small-sidebar .subscribed-list{
+    display: none;
+}
+.small-sidebar hr{
+    display: none;
+}
+.shortcut-links a img{
+    width: 20px;
+    margin-right: 30px;
+}
+.shortcut-links a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+.shortcut-links a:first-child{
+    color: #ed3833;
+}
+.sidebar hr{
+    border: 0;
+    height: 1px;
+    background: #3f3f3f;
+    width: 85%;
+    margin-bottom: 10px;
+}
+.subscribed-list h3{
+    font-size: 13px;
+    margin: 12px 0;
+    color: #ed3833;
+}
+.subscribed-list a{
+ display: flex;
+ align-items: center;
+ margin-bottom: 20px;
+ width: fit-content;
+ flex-wrap: wrap;
+}
+.subscribed-list a img{
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* ---main---- */
+.container{
+    padding: 20px 2% 20px 17%;
+}
+.large-container{
+    padding-left:7%;
+}
+.banner{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+    border-radius: 8px;
+}
+.list-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+}
+.videos-list .thumbnail{
+    width:100%;
+    border-radius: 5px;
+}
+.videos-list .flex-div{
+    align-items: flex-start;
+    margin-top: 7px;
+}
+.videos-list .flex-div img{
+    width: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.vid-info{
+    color: #5a5a5a;
+    font-size: 13px;
+}
+.vid-info a{
+    color: #fff;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 900px) {
+    .sidebar,.menu{
+        display: none;
+    }
+    .nav-right img,.nav-middle .mic-icon{
+        display: none;
+    }
+    .nav-right .user-icon{
+        display: block;
+        width: 20px;
+    }
+    .container,.large-container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .nav-middle{
+        width:200px
+    }
+    .nav-middle .search-box input{
+        width:100px;
+    }   
+}
